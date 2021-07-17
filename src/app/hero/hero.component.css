@@ -1,0 +1,12 @@
+.hero {
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 300px;
+}

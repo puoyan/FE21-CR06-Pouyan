@@ -1,0 +1,42 @@
+<h2>Travel Offers</h2>
+
+<div class="container">
+
+	<div  *ngFor="let offer of offers; index as id">
+		<div class="row">
+			<div class="col col-md-12">
+			<div class="card mb-2">
+						<div class="card-header">{{ offer.destition }}</div>
+						<img class="card-img-top" src="{{ offer.image }}" alt="{{ offer.destition }}">
+						<div class="card-body p-5">
+							<p *ngIf="offer.duration">
+								{{ offer.duration }}</p>
+							
+								<p *ngIf="offer.price">
+									{{ offer.price }}</p>
+								<a class="btn btn-small btn-primary" (click)="addToCart(offer) ">+Add</a>
+							
+							</div>
+		
+			</div>
+					
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+ 
+
+
+
+
+
+
+<!-- destition:"Hormozgan",
+		startDate:"01.01.2022",
+		duration:"2 Weeks",
+		price:"100euro",
+		image: './image/1.jpeg',
+	}, -->
